@@ -14,8 +14,8 @@ namespace Ucu.Poo.Restaurant
     public class Table
     {
         // 1
-        public int Number { get; private set; }
-        public bool IsOccupied { get; private set; }
+        public int Number { get ; set; }
+        public bool IsOccupied { get;  set; }
 
         private ArrayList order = new ArrayList();
 
@@ -38,8 +38,9 @@ namespace Ucu.Poo.Restaurant
             this.order.Clear(); 
         }
 
-        public 
-            this.order.Add(dish);
+        public void AddToOrder(Dish d)
+        { 
+            this.order.Add(d);
         }
 
         public bool HasOrders()
