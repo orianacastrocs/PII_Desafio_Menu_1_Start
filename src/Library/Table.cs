@@ -8,12 +8,39 @@ using System.Collections;
 
 namespace Ucu.Poo.Restaurant
 {
-    /// <summary>
-    /// Representa una mesa en el restaurante.
-    /// </summary>
+   
+    /// Representaremos una querida mesa de comensales.
+    
     public class Table
     {
+        // 1
+        public int Number { get; private set; }
+        public bool IsOccupied { get; private set; }
+
         private ArrayList order = new ArrayList();
+
+        // 2
+        public Table(int number)
+        {
+            this.Number = number;
+            this.IsOccupied = false;
+        }
+
+        // 3. 
+        public void Occupy()
+        {
+            this.IsOccupied = true;
+        }
+
+        public void Free()
+        {
+            this.IsOccupied = false;
+            this.order.Clear(); 
+        }
+
+        public 
+            this.order.Add(dish);
+        }
 
         public bool HasOrders()
         {

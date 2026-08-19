@@ -16,6 +16,7 @@ namespace Ucu.Poo.Restaurant
     public class Menu
     {
         private ArrayList dishes = new ArrayList();
+<<<<<<< HEAD
         public void AddDish(Dish dish)
         {
             dishes.Add(dish);
@@ -35,5 +36,11 @@ namespace Ucu.Poo.Restaurant
             }
             return null;
         }
+=======
+
+
+>>>>>>> b30e8b4b54d0524b03b0f50b149db10f75e11722
     }
 }
+
+
