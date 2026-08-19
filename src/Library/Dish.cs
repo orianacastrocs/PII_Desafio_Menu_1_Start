@@ -15,7 +15,7 @@ namespace Ucu.Poo.Restaurant
         private double Price { get; set; }
         private bool isVegetarian { get; set; }
 
-        public Dish(string name, decimal price, bool isVegetarian)
+        public Dish(string name, double price, bool isVegetarian)
         {
             this.Name = name;
             this.Price = price;
