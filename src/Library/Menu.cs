@@ -5,6 +5,7 @@
 //------------------------------------------------------------------------------
 
 using System.Collections;
+using System.Globalization;
 
 namespace Ucu.Poo.Restaurant
 {
@@ -12,8 +13,12 @@ namespace Ucu.Poo.Restaurant
     /// Representa el conjunto de platillos <see cref="Dish"/> disponibles en el
     /// restaurante.
     /// </summary>
-    public class Menu{}
+    public class Menu
+    {
+        private ArrayList dishes = new ArrayList();
 
+
+    }
 }
 
 
