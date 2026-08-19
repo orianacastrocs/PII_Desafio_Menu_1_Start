@@ -8,25 +8,25 @@ using System.Collections;
 
 namespace Ucu.Poo.Restaurant
 {
-    /// <summary>
-    /// Representa una mesa en el restaurante.
-    /// </summary>
+   
+    /// Representaremos una querida mesa de comensales.
+    
     public class Table
     {
-        // 1. Responsabilidades de conocer (Faltaban)
+        // 1
         public int Number { get; private set; }
         public bool IsOccupied { get; private set; }
 
         private ArrayList order = new ArrayList();
 
-        // 2. Constructor: Permite inicializar las propiedades en una sola operación (Faltaba)
+        // 2
         public Table(int number)
         {
             this.Number = number;
             this.IsOccupied = false;
         }
 
-        // 3. Responsabilidades de hacer (Faltaban)
+        // 3. 
         public void Occupy()
         {
             this.IsOccupied = true;
@@ -35,7 +35,7 @@ namespace Ucu.Poo.Restaurant
         public void Free()
         {
             this.IsOccupied = false;
-            this.order.Clear(); // Vacía la lista usando Clear() como dice el tip
+            this.order.Clear(); 
         }
 
         public void AddToOrder(Dish dish)
