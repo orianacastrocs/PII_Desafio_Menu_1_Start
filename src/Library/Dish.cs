@@ -11,5 +11,15 @@ namespace Ucu.Poo.Restaurant
     /// </summary>
     public class Dish
     {
+        private string Name { get; set; }
+        private double Price { get; set; }
+        private bool isVegetarian { get; set; }
+
+        public Dish(string name, decimal price, bool isVegetarian)
+        {
+            this.Name = name;
+            this.Price = price;
+            this.IsVegetarian = isVegetarian;
+        }
     }
 }
