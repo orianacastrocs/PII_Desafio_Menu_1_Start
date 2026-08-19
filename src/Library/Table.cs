@@ -38,8 +38,7 @@ namespace Ucu.Poo.Restaurant
             this.order.Clear(); 
         }
 
-        public void AddToOrder(Dish dish)
-        {
+        public 
             this.order.Add(dish);
         }
 
