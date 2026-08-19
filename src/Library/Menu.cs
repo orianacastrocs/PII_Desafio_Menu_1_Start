@@ -12,12 +12,8 @@ namespace Ucu.Poo.Restaurant
     /// Representa el conjunto de platillos <see cref="Dish"/> disponibles en el
     /// restaurante.
     /// </summary>
-    public class Menu
-    {
-        private ArrayList dishes = new ArrayList();
+    public class Menu{}
 
-
-    }
 }
 
 
