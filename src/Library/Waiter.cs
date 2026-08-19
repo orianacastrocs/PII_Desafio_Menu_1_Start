@@ -13,6 +13,22 @@ namespace Ucu.Poo.Restaurant
     /// </summary>
     public class Waiter
     {
+        public string Name { get; set; }
         private ArrayList assignedTables = new ArrayList();
+
+        public void AssignTable(Table table)
+        {
+            assignedTables.Add(table);
+        }
+        public void  TakeOrder(Table table, Dish dish)
+        {
+            table.AddToOrder(dish);
+
+        }
+        public Waiter(string name = "")
+        {
+            this.Name = name;
+
+        }
     }
 }
